@@ -1,0 +1,54 @@
+---
+layout: post
+title: "cherrypy"
+date: 2012-07-17 18:55
+comments: false
+categories: 
+    - cherrypy
+    - python
+---
+[Cherrypy][cherrypy] is a minimalist python web framework.
+
+###Example
+Install [cherrypy][cherrypy], hopefully to a virtual environment using [virtualenv][virtualenv], [virtualenvwrapper][virtualenvwrapper], and [pip][pip]
+``` bash
+    pip install cherrypy
+```
+
+Create main cherrypy application: hello.py
+``` bash
+    mkdir hello-cherrypy && cd hello-cherrypy
+    touch hello.py
+    sublime hello.py #Insert your favourite editor here
+```
+
+Respond to all web requests with: "Hello World!"
+``` python hello.py
+    import cherrypy
+    class HelloWorld(object):
+        def index(self):
+            return "Hello World!"
+        index.exposed = True
+
+    cherrypy.quickstart(HelloWorld())
+```
+
+Execute your new web application with:
+``` bash
+    python hello.py
+```
+
+Hit [http://localhost:8080](http://localhost:8080) to see your handiwork.
+
+###Links
+* [cherrypy][cherrypy]
+* [python][python]
+* [virtualenv][virtualenv]
+* [pip][pip]
+* [virtualenvwrapper][virtualenvwrapper]
+
+[cherrypy]: http://www.cherrypy.org/
+[python]: http://www.python.org/
+[virtualenv]: http://www.virtualenv.org/en/latest/index.html
+[pip]: http://www.pip-installer.org/en/latest/index.html
+[virtualenvwrapper]: http://www.doughellmann.com/projects/virtualenvwrapper/
