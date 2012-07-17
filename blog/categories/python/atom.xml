@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python | Short Tech Blog]]></title>
+  <link href="http://jpennell.github.com/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://jpennell.github.com/"/>
+  <updated>2012-07-17T19:41:14-04:00</updated>
+  <id>http://jpennell.github.com/</id>
+  <author>
+    <name><![CDATA[James Pennell]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[cherrypy]]></title>
+    <link href="http://jpennell.github.com/blog/2012/07/17/cherrypy/"/>
+    <updated>2012-07-17T18:55:00-04:00</updated>
+    <id>http://jpennell.github.com/blog/2012/07/17/cherrypy</id>
+    <content type="html"><![CDATA[<p><a href="http://www.cherrypy.org/">Cherrypy</a> is a minimalist python web framework.</p>
+
+<h3>Example</h3>
+
+<p>Install <a href="http://www.cherrypy.org/">cherrypy</a>, hopefully to a virtual environment using <a href="http://www.virtualenv.org/en/latest/index.html">virtualenv</a>, <a href="http://www.doughellmann.com/projects/virtualenvwrapper/">virtualenvwrapper</a>, and <a href="http://www.pip-installer.org/en/latest/index.html">pip</a>
+``` bash</p>
+
+<pre><code>pip install cherrypy
+</code></pre>
+
+<p>```</p>
+
+<p>Create main cherrypy application: hello.py
+``` bash</p>
+
+<pre><code>mkdir hello-cherrypy &amp;&amp; cd hello-cherrypy
+touch hello.py
+sublime hello.py #Insert your favourite editor here
+</code></pre>
+
+<p>```</p>
+
+<p>Respond to all web requests with: "Hello World!"
+``` python hello.py</p>
+
+<pre><code>import cherrypy
+class HelloWorld(object):
+    def index(self):
+        return "Hello World!"
+    index.exposed = True
+
+cherrypy.quickstart(HelloWorld())
+</code></pre>
+
+<p>```</p>
+
+<p>Execute your new web application with:
+``` bash</p>
+
+<pre><code>python hello.py
+</code></pre>
+
+<p>```</p>
+
+<p>Hit <a href="http://localhost:8080">http://localhost:8080</a> to see your handiwork.</p>
+
+<h3>Links</h3>
+
+<ul>
+<li><a href="http://www.cherrypy.org/">cherrypy</a></li>
+<li><a href="http://www.python.org/">python</a></li>
+<li><a href="http://www.virtualenv.org/en/latest/index.html">virtualenv</a></li>
+<li><a href="http://www.pip-installer.org/en/latest/index.html">pip</a></li>
+<li><a href="http://www.doughellmann.com/projects/virtualenvwrapper/">virtualenvwrapper</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[short-tech-blog]]></title>
+  <title><![CDATA[Short Tech Blog]]></title>
   <link href="http://jpennell.github.com/atom.xml" rel="self"/>
   <link href="http://jpennell.github.com/"/>
-  <updated>2012-07-16T23:55:22-04:00</updated>
+  <updated>2012-07-17T19:41:14-04:00</updated>
   <id>http://jpennell.github.com/</id>
   <author>
     <name><![CDATA[James Pennell]]></name>
@@ -12,5 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cherrypy]]></title>
+    <link href="http://jpennell.github.com/blog/2012/07/17/cherrypy/"/>
+    <updated>2012-07-17T18:55:00-04:00</updated>
+    <id>http://jpennell.github.com/blog/2012/07/17/cherrypy</id>
+    <content type="html"><![CDATA[<p><a href="http://www.cherrypy.org/">Cherrypy</a> is a minimalist python web framework.</p>
+
+<h3>Example</h3>
+
+<p>Install <a href="http://www.cherrypy.org/">cherrypy</a>, hopefully to a virtual environment using <a href="http://www.virtualenv.org/en/latest/index.html">virtualenv</a>, <a href="http://www.doughellmann.com/projects/virtualenvwrapper/">virtualenvwrapper</a>, and <a href="http://www.pip-installer.org/en/latest/index.html">pip</a></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>pip install cherrypy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Create main cherrypy application: hello.py</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>mkdir hello-cherrypy <span class="o">&amp;&amp;</span> <span class="nb">cd </span>hello-cherrypy
+</span><span class='line'>touch hello.py
+</span><span class='line'>sublime hello.py <span class="c">#Insert your favourite editor here</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Respond to all web requests with: &#8220;Hello World!&#8221;</p>
+
+<figure class='code'><figcaption><span>hello.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">cherrypy</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">HelloWorld</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="k">return</span> <span class="s">&quot;Hello World!&quot;</span>
+</span><span class='line'>    <span class="n">index</span><span class="o">.</span><span class="n">exposed</span> <span class="o">=</span> <span class="bp">True</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">cherrypy</span><span class="o">.</span><span class="n">quickstart</span><span class="p">(</span><span class="n">HelloWorld</span><span class="p">())</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Execute your new web application with:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>python hello.py
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hit <a href="http://localhost:8080">http://localhost:8080</a> to see your handiwork.</p>
+
+<h3>Links</h3>
+
+<ul>
+<li><a href="http://www.cherrypy.org/">cherrypy</a></li>
+<li><a href="http://www.python.org/">python</a></li>
+<li><a href="http://www.virtualenv.org/en/latest/index.html">virtualenv</a></li>
+<li><a href="http://www.pip-installer.org/en/latest/index.html">pip</a></li>
+<li><a href="http://www.doughellmann.com/projects/virtualenvwrapper/">virtualenvwrapper</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>

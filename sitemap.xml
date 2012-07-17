@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://jpennell.github.com/blog/2012/07/17/cherrypy/</loc>
+        <lastmod>2012-07-17T19:27:09-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://jpennell.github.com/</loc>
-        <lastmod>2012-07-16T23:33:47-04:00</lastmod>
+        <lastmod>2012-07-17T19:27:09-04:00</lastmod>
     </url>
     <url>
         <loc>http://jpennell.github.com/blog/archives/</loc>
-        <lastmod>2012-07-16T23:33:47-04:00</lastmod>
+        <lastmod>2012-07-17T19:27:09-04:00</lastmod>
     </url>
 </urlset>
