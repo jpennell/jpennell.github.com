@@ -1,0 +1,51 @@
+body {
+    color: #333;
+}
+
+a {
+    color: #0084B4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0084B4;
+    text-decoration: underline;
+}
+
+footer {
+    color: #9A9EA8;
+    border-top: 1px solid #eee;
+    padding: 1em 0 4em 0;
+    margin: 2em 0 0 0;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    margin: 2em 0 0 0;
+}
+
+p {
+    line-height: 1.5em;
+    color: #222;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+li {
+    color: #222;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+h1 {
+    color: #008000;
+}
+
+.article-title {
+    margin-bottom: 0;
+}
+
+.article-header {
+    padding: 0 0 1em 0;
+    margin: 0 0 1em 0;
+}
